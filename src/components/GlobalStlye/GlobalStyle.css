@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --text-hover: #f97316;
+    --text-color: #4d4d4d;
+    --blue: #2968b0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    color: #4d4d4d;
+    font-weight: 400;
+}
+
+/* Header */
+.header-item:hover .submenu-list {
+    display: block;
+    color: var(--text-color);
+    transition: all 0.2s linear;
+    animation: fadeIn ease-in-out 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header-movie-img {
+    &:hover .movie-img {
+        filter: brightness(50%);
+    }
+
+    &:hover .buy-ticket {
+        display: flex;
+        transition: all 0.2s linear;
+        animation: fadeIn ease-in-out 0.3s;
+    }
+}
+
+/* Login */
+.input-form {
+    display: flex;
+    flex-direction: column;
+
+    & input {
+        border: 1px solid #ddd;
+        width: 100%;
+        font-size: 16px;
+        padding: 4px 0;
+        padding-left: 8px;
+        border-radius: 4px;
+        outline: none;
+
+        &:focus-within {
+            border: 2px solid #7fc4db;
+        }
+    }
+}
+
+.container {
+    @apply max-w-screen-desktop tabletMini:mx-auto;
+}
+
+.form-login {
+    animation: fadeIn ease-in-out 0.2s;
+    transition: all 0.2s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 100rem;
+    background: rgb(212, 212, 206);
+}
