@@ -51,6 +51,11 @@ body {
         transition: all 0.2s linear;
         animation: fadeIn ease-in-out 0.3s;
     }
+
+    .movie-img .img {
+        width: 100%;
+        object-fit: contain;
+    }
 }
 
 /* Login */
@@ -74,7 +79,7 @@ body {
 }
 
 .container {
-    @apply max-w-screen-desktop tabletMini:mx-auto;
+    @apply max-w-screen-desktop desktop:mx-auto;
 }
 
 .form-login {

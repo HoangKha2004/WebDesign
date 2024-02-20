@@ -1,7 +1,7 @@
 import React from 'react';
 import { DataMovie } from './DataMovie';
-import buyTicket from '../../../../../public/images/buyTicket.svg';
-import star from '../../../../../public/images/star.svg';
+import buyTicket from '/images/buyTicket.svg';
+import star from '/images/star.svg';
 import { Link } from 'react-router-dom';
 
 const Movies = () => {

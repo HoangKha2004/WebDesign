@@ -53,7 +53,7 @@ const SubMenu = styled.div`
 
         &:hover {
             background-color: #fb770b1a;
-            color: var(--text-color);
+            color: var(--text-hover);
             border-color: #ff7b00;
             transform: translateX(2px);
         }

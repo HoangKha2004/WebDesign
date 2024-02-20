@@ -5,6 +5,7 @@ export default {
         extend: {
             colors: {
                 hover: '#F97A5A',
+                textColor: '#4A4A4A',
             },
             boxShadow: {
                 shadowMenu:

@@ -5,10 +5,10 @@ import RuouCotNguoi from '/imageMoving/ruouCotNguoi.webp';
 import VongVayCaMap from '/imageMoving/vongVayCaMap.webp';
 
 // Phim sắp chiếu
-import MaKeoGio from '/public/imageNewMovie/maKeoGio.webp';
-import SuMenhDaiDuong from '/public/imageNewMovie/suMenhDaiDuong.webp';
-import TronTimVoiQuy from '/public/imageNewMovie/tronTimVoiQuy.webp';
-import Oppenheimer from '/public/imageNewMovie/Oppenheimer.webp';
+import MaKeoGio from '/imageNewMovie/maKeoGio.webp';
+import SuMenhDaiDuong from '/imageNewMovie/suMenhDaiDuong.webp';
+import TronTimVoiQuy from '/imageNewMovie/tronTimVoiQuy.webp';
+import Oppenheimer from '/imageNewMovie/oppenheimer.webp';
 
 //Phim Imax
 import DongChayCuaNuoc from '/imageImaxMovie/dongChayCuaNuoc.webp';
@@ -41,7 +41,7 @@ const DataMovie = [
                 image: RuouCotNguoi,
                 name: 'Rượu Cốt Người',
                 rate: 4.6,
-                age: '16T',
+                age: 'T16',
             },
             {
                 id: 4,
