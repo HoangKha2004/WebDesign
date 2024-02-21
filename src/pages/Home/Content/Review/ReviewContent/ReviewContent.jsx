@@ -70,7 +70,7 @@ const ReviewContent = () => {
                             </p>
                             <p className="item">
                                 <FaEye />
-                                <span>61</span>
+                                <span>102</span>
                             </p>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ const ReviewContent = () => {
                                     </p>
                                     <p className="item">
                                         <FaEye />
-                                        <span>61</span>
+                                        <span>2375</span>
                                     </p>
                                 </div>
                             </div>
@@ -111,7 +111,7 @@ const ReviewContent = () => {
                                     </p>
                                     <p className="item">
                                         <FaEye />
-                                        <span>61</span>
+                                        <span>547</span>
                                     </p>
                                 </div>
                             </div>
@@ -131,7 +131,7 @@ const ReviewContent = () => {
                                     </p>
                                     <p className="item">
                                         <FaEye />
-                                        <span>61</span>
+                                        <span>3215</span>
                                     </p>
                                 </div>
                             </div>

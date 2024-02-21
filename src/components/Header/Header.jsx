@@ -57,7 +57,7 @@ const Header = () => {
 
     return (
         <HeaderContainer className="desktop:py-[40px] tablet:py-3 py-5">
-            <div className="container flex tablet:px-20 sm:px-10 justify-between px-4">
+            <div className="container flex justify-between px-5">
                 {/* Logo */}
                 <div className="flex items-center tabletMini:gap-x-10 gap-x-5">
                     <Link to="/">
@@ -112,7 +112,7 @@ const Header = () => {
 
                     {/* Form login */}
                     {isOpenForm && (
-                        <div className="form-login absolute left-0 right-0 top-0 bottom-0 bg-overlay z-50 flex justify-center items-center ">
+                        <div className="form-login fixed left-0 right-0 top-0 bottom-0 bg-overlay z-50 flex justify-center items-center">
                             <div
                                 ref={modalRef}
                                 className="bg-white px-6 py-9 rounded min-w-[400px] flex flex-col gap-3 relative"

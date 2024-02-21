@@ -35,7 +35,7 @@ const Menu = styled.div`
 `;
 const Review = () => {
     return (
-        <div className="py-14 px-5 container tablet:max-w-screen-tablet tablet:mx-auto tabletMini:max-w-screen-tabletMini tabletMini:mx-auto border-b-2">
+        <div className="py-14 px-5 container border-b-2">
             <div className="flex items-center gap-x-10 ">
                 <h3 className="font-bold uppercase text-[20px] hidden tabletMini:block relative after:absolute after:h-[80%] after:w-1 after:top-[50%] after:translate-y-[-50%] after:left-[-10px] after:bg-blue-800">
                     Góc điện ảnh

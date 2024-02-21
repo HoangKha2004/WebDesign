@@ -8,13 +8,13 @@ import PhoneSlide from './PhoneSlide/PhoneSlide';
 
 const QRApp = () => {
     return (
-        <div className="relative hidden desktop:block w-full">
-            <img src={backGround} />
-            <div className="container tablet:max-w-screen-tablet mx-auto tabletMini:max-w-screen-tabletMini ">
+        <div className="relative hidden tablet:block">
+            <img src={backGround} className="h-[400px] desktop:h-[500px] object-cover" />
+            <div className="container">
                 <div className="absolute top-[50%] translate-y-[-50%] grid grid-cols-2 px-32 z-20">
-                    <div className="relative">
+                    <div className="relative desktop:w-[200px] desktop:h-[408px] w-[180px] h-[350px]">
+                        <img src={frameIphone} className="absolute h-full top-0 z-10" />
                         <PhoneSlide></PhoneSlide>
-                        <img src={frameIphone} className="absolute z-20 left-[134px] top-[-10px] " />
                     </div>
                     <div className="flex flex-col justify-center gap-4 text-white">
                         <h4 className="text-2xl capitalize">Đặt vé online - không lo trễ nải</h4>

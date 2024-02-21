@@ -4,6 +4,7 @@ import Review from './Review/Review';
 import styled from 'styled-components';
 import Promotion from './Promotion/Promotion';
 import QRApp from './QRApp/QRApp';
+import Introduce from './Introduce/Introduce';
 const Content = () => {
     return (
         <div>
@@ -11,6 +12,7 @@ const Content = () => {
             <Review></Review>
             <Promotion></Promotion>
             <QRApp></QRApp>
+            <Introduce></Introduce>
         </div>
     );
 };

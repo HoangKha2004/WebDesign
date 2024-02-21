@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FaYoutube, FaFacebookSquare, FaInstagramSquare, FaTelegramPlane } from 'react-icons/fa';
 import { BsFillPhoneFill, BsFillTelephoneFill } from 'react-icons/bs';
 
-import galaxy from '/images/galaxyFooter.svg';
+import galaxy from '/images/galaxyFooter.webp';
 import tradeFooter from '/images/tradeFooter.webp';
 
 const Item = styled.div`
@@ -46,7 +46,7 @@ const Item = styled.div`
 const Footer = () => {
     return (
         <div className="bg-[#333] ">
-            <div className="container border-b-2 tablet:max-w-screen-tablet tabletMini:max-w-screen-tabletMini tabletMini:px-4 px-11 mx-auto py-8 sm:grid tabletMini:grid-cols-4 sm:grid-cols-2 flex flex-col items-center sm:items-start text-center tabletMini:text-left gap-20">
+            <div className="container border-b-2 tabletMini:px-5 px-11 mx-auto py-8 sm:grid tabletMini:grid-cols-4 sm:grid-cols-2 flex flex-col items-center sm:items-start text-center tabletMini:text-left gap-20">
                 <Item>
                     <h3>Giới thiệu</h3>
                     <div className="flex flex-col gap-5">
@@ -76,7 +76,7 @@ const Footer = () => {
                         <a href="#">FAQ</a>
                     </div>
                 </Item>
-                <Item>
+                <Item className="flex items-center">
                     <img src={galaxy} className="object-contain w-[100px]" />
                     <div className="flex gap-3 ">
                         <a href="#">
@@ -94,14 +94,14 @@ const Footer = () => {
                     </a>
                 </Item>
             </div>
-            <div className="container flex gap-4 tablet:max-w-screen-tablet tabletMini:max-w-screen-tabletMini mx-auto tabletMini:px-4 px-11 py-5">
-                <img src={galaxy} />
-                <div className="flex flex-col gap-1">
+            <div className="container flex gap-4 tabletMini:px-5 px-11 py-5 flex-wrap">
+                <img src={galaxy} className="w-[100px] object-contain hidden tabletMini:block" />
+                <div className="flex flex-wrap flex-col gap-1">
                     <h4 className="uppercase text-lg text-white font-semibold">Công ty cổ phần phim thiên ngân</h4>
                     <p className="text-[#bbb] text-[12px]">
                         Toà nhà Bitexco Nam Long, 63A Võ Văn Tần, Phường 6, Quận 3, Tp. Hồ Chí Minh, Việt Nam
                     </p>
-                    <div className="flex gap-2 text-sm items-center text-[#bbb]">
+                    <div className="flex flex-wrap gap-2 text-sm items-center text-[#bbb]">
                         <div className="flex items-center ">
                             <BsFillPhoneFill className="text-[12px]" />
                             <span className="text-[11px] tracking-[0.5px]">

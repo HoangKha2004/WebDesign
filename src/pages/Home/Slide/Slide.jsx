@@ -28,6 +28,7 @@ export default () => {
             pagination={{
                 clickable: true,
             }}
+            navigation={true}
         >
             <SwiperSlide>
                 <img src={slide1} />
