@@ -12,6 +12,15 @@ const ContenContainer = styled.div`
         display: flex;
         animation: fadeIn linear 0.3s;
     }
+    .bcg {
+        position: absolute;
+        bottom: 40px;
+        right: 0;
+        border-top: 15px solid rgba(0, 0, 0, 0.5);
+        border-right: 85px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 15px solid rgba(0, 0, 0, 0.5);
+        border-left: 10px solid transparent;
+    }
 
     @keyframes fadeIn {
         from {
@@ -36,7 +45,8 @@ const Movie = () => {
                                             <div className="header-movie-img">
                                                 <div className="movie-img rounded">
                                                     <img src={item.image} className="rounded img" />
-                                                    <div className="flex absolute  bottom-10 right-0 items-center gap-5 bg-overlay pl-7">
+                                                    <div className="bcg"></div>
+                                                    <div className="flex absolute bottom-10 right-0 items-center gap-5  pl-7">
                                                         <img src={star} className="w-[15px]" />
                                                         <span className="text-white text-xl font-bold pr-2">
                                                             {item.rate}
@@ -64,7 +74,7 @@ const Movie = () => {
                                             </div>
                                         </div>
 
-                                        <p className="text-[15px] font-bold">{item.name}</p>
+                                        <p className="text-[16px] font-bold ml-1 whitespace-nowrap">{item.name}</p>
                                     </Link>
                                 );
                             })}

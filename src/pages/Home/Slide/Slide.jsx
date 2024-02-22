@@ -22,13 +22,15 @@ export default () => {
         <Swiper
             modules={[Pagination, Navigation, Autoplay]}
             autoplay={{
-                delay: 2500,
+                delay: 3000,
                 disableOnInteraction: false,
             }}
             pagination={{
                 clickable: true,
             }}
             navigation={true}
+            loop={true}
+            slidesPerView={1}
         >
             <SwiperSlide>
                 <img src={slide1} />

@@ -46,7 +46,7 @@ const Header = () => {
             if (modalRef.current && !modalRef.current.contains(e.target)) {
                 setIsOpenSearch(false);
                 setIsFocus(false);
-                setIsOpenForm(false);
+                // setIsOpenForm(false);
             }
         };
         document.addEventListener('mousedown', handleClickOutSide);

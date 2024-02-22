@@ -14,11 +14,12 @@ export default () => {
         <Swiper
             modules={[Autoplay]}
             autoplay={{
-                delay: 2500,
+                delay: 4000,
                 disableOnInteraction: false,
             }}
             slidesPerView={1}
             className="absolute desktop:top-[9.2px] top-[8px] desktop:left-[10px] left-[9px] desktop:w-[180px] w-[155px] h-full  z-0"
+            loop={true}
         >
             <SwiperSlide>
                 <img src={slide1} />
